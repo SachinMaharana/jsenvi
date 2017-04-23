@@ -5,6 +5,14 @@
   "repository": "git@github.com:SachinMaharana/jsenvi.git",
   "author": "sachin <sachin.nicky@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "node buildScripts/srcServer.js",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 3003 --subdomain nick",
+    "share": "npm-run-all --parallel open:src localtunnel"
+  },
   "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
