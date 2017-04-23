@@ -13,3 +13,4 @@ npm start -s
 
 babel-preset-es2015-node
 depcheck
+webpack
