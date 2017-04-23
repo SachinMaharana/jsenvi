@@ -1,6 +1,6 @@
-const express = require("express");
-const path = require("path");
-const open = require("open");
+import express from "express";
+import path from "path";
+import open from "open";
 
 let port = 3003;
 const app = express();

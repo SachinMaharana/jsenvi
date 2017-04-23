@@ -10,3 +10,6 @@ lt --port 3000 --subdomain whtname
 automation
 npm scripts
 npm start -s
+
+babel-preset-es2015-node
+depcheck
