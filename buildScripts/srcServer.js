@@ -29,3 +29,5 @@ app.listen(port, err => {
 });
 
 console.log("I am from the masert");
+console.log("Another log");
+console.log("Hello");
