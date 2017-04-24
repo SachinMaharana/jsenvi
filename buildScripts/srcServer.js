@@ -4,8 +4,11 @@ import open from "open";
 import webpack from "webpack";
 import config from "../webpack.config.dev";
 
+/* eslint-disable no-console */
+
 let port = 3003;
 const app = express();
+console.log("Working");
 const compiler = webpack(config);
 
 app.use(
@@ -24,3 +27,5 @@ app.listen(port, err => {
     ? console.log("Err", err.code)
     : open(`http://localhost:${port}`, console.log(`Running on Port ${port}`));
 });
+
+console.log("I am from the masert");
